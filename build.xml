@@ -1,0 +1,14 @@
+<project name = "BuildMA" default ="compile">
+    <property name="build.sysclasspath" value="last"/>
+    <target name="compile" description="compile java">
+        <javac destdir="target/classes">
+            <src path="src/main/java"/>
+        </javac>
+    </target>
+    <target name="clean" description="delete class files">
+        <echo>I'm cleaning up</echo>
+        <delete>
+            <fileset dir="target/classes" includes="*.class"/>
+        </delete>
+    </target>
+</project>
