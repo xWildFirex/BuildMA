@@ -1,6 +1,10 @@
 <project name = "BuildMA" default ="compile">
     <property name="build.sysclasspath" value="last"/>
+    <target name="run" depends="compile">
+        <java classpath="target/classes" classname="HelloWorld"/>
+    </target>
     <target name="compile" description="compile java">
+        <mkdir dir="target/classes"/>
         <javac destdir="target/classes">
             <src path="src/main/java"/>
         </javac>
@@ -11,4 +15,5 @@
             <fileset dir="target/classes" includes="*.class"/>
         </delete>
     </target>
+
 </project>
