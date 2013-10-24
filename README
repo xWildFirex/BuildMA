@@ -1,4 +1,5 @@
 To run use:
-1. compile.bat
+
+1. compileRun.bat
 2. Ant - ant run(compile, clean)
 3. Maven - mvn exec:java
