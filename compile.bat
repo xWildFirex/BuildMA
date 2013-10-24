@@ -1,1 +1,0 @@
-javac src\main\java\helloworld.java -d target\classes
